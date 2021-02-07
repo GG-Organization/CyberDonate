@@ -29,6 +29,7 @@ $(document).ready(function() {
 
     $(function() {
         parallax($('.bg_line'), $('.main'), -50, -50);
+        parallax($('.m_tab2'), $('.main'), -120, -120);
         parallax($('.m_tab2'), $('.main'), -100, -100);
         parallax($('.m_tab3'), $('.main'), -70, -70);
     });
