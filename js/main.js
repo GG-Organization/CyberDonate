@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+    var $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+        return false;
+    });
+
     function parallax(layer, container, x, y) {
         var $layer_1 = layer,
             $container = container,
@@ -29,7 +38,7 @@ $(document).ready(function() {
 
     $(function() {
         parallax($('.bg_line'), $('.main'), -50, -50);
-        parallax($('.m_tab2'), $('.main'), -120, -120);
+        parallax($('.m_tab1'), $('.main'), -120, -120);
         parallax($('.m_tab2'), $('.main'), -100, -100);
         parallax($('.m_tab3'), $('.main'), -70, -70);
     });
