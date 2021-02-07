@@ -1013,6 +1013,22 @@
             <script src="dist/TweenMax.min.js"></script>
 
             <script src="js/main.js"></script>
+            <script>
+                const anchors = document.querySelectorAll('a[href*="#"]')
+
+                for (let anchor of anchors) {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault()
+
+                        const blockID = anchor.getAttribute('href').substr(1)
+
+                        document.getElementById(blockID).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        })
+                    })
+                }
+            </script>
 </body>
 
 </html>
