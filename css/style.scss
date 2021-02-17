@@ -1,3154 +1,2049 @@
 @import "reset_style";
-
-
-
-
-.btn_b
-{
-  width: 100%;
-
-  .btn_m
-  {
-    background-color: $main_color2;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
+.btn_b {
     width: 100%;
-    max-width: 300px;
-    color: $white;
-    display: block;
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 4px 100px rgba(211, 78, 87, 0.15);
-    box-shadow: 0px 4px 100px rgba(211, 78, 87, 0.15);
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-
-    &:hover
-    {
-      &:after
-      {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    &:after
-    {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: $main_color3;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-      transform: translateY(100%);
-      opacity: 0;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s;
-    }
-  }
-}
-
-
-body,html
-{
-  background-color: #0E101A;
-  overflow-x: hidden!important;
-
-}
-
-.page
-{
-  width: 100%;
-
-  .header
-  {
-    .mw
-    {
-      padding: 50px 2vh;
-
-      .logo
-      {
+    .btn_m {
+        background-color: $main_color2;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
         width: 100%;
         max-width: 300px;
-
-        img
-        {
-          width: 100%;
+        color: $white;
+        display: block;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 4px 100px rgba(211, 78, 87, 0.15);
+        box-shadow: 0px 4px 100px rgba(211, 78, 87, 0.15);
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        &:hover {
+            &:after {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
-      }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $main_color3;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+            opacity: 0;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+        }
     }
-  }
+}
 
-  .main
-  {
-    @include df(row,center,center);
+body,
+html {
+    background-color: #0E101A;
+    overflow-x: hidden!important;
+}
 
-    .mw
-    {
-      padding: 100px 2vh;
-      z-index: 3;
-
-      .cont
-      {
-        @include df(row,space-between,center);
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-
-        .left_side
-        {
-          width: 55%;
-
-          .h1
-          {
+.page {
+    width: 100%;
+    .header {
+        .mw {
+            padding: 50px 2vh;
+            .logo {
+                width: 100%;
+                max-width: 300px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .main {
+        @include df(row, center, center);
+        .mw {
+            padding: 100px 2vh;
+            z-index: 3;
+            .cont {
+                @include df(row, space-between, center);
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                .left_side {
+                    width: 55%;
+                    .h1 {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 48px;
+                        line-height: 65px;
+                        letter-spacing: 0.02em;
+                        color: $white;
+                    }
+                    .h2 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 22px;
+                        line-height: 30px;
+                        letter-spacing: 0.02em;
+                        color: $main_color;
+                        padding-top: 30px;
+                        max-width: 500px;
+                    }
+                    .btn_b {
+                        margin-top: 40px;
+                    }
+                }
+                .right_side {
+                    width: 40%;
+                    @include df(column, flex-end, flex-end);
+                    .m_tab {
+                        width: 100%;
+                        max-width: 316px;
+                        background-color: $main_color3;
+                        padding: 15px 30px;
+                        @include df(row, flex-start, center);
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                        margin-bottom: 70px;
+                        &:nth-child(2) {
+                            margin-right: 70px;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .icon {
+                            width: 50px;
+                            min-width: 50px;
+                            margin-right: 20px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .desc {
+                            p {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 19px;
+                                letter-spacing: 0.02em;
+                                color: $white;
+                            }
+                            span {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 13px;
+                                line-height: 18px;
+                                letter-spacing: 0.02em;
+                                color: $main_color;
+                            }
+                        }
+                    }
+                }
+            }
+            .arrow_down {
+                padding-top: 230px;
+                @include df(row, center, center);
+                img {
+                    -webkit-animation: 5s arrow_anim ease infinite;
+                    animation: 5s arrow_anim ease infinite;
+                }
+            }
+            @-webkit-keyframes arrow_anim {
+                0%,
+                100% {
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                }
+                50% {
+                    -webkit-transform: translateY(20px);
+                    transform: translateY(20px);
+                }
+            }
+            @keyframes arrow_anim {
+                0%,
+                100% {
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                }
+                50% {
+                    -webkit-transform: translateY(20px);
+                    transform: translateY(20px);
+                }
+            }
+        }
+        .bg_line {
+            position: absolute;
+            width: 100%;
+            margin-top: -200px;
+            img {
+                width: 100%;
+                -webkit-animation: 30s animate linear infinite;
+                animation: 30s animate linear infinite;
+            }
+            @-webkit-keyframes animate {
+                0%,
+                100% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+                50% {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    opacity: 0.8;
+                }
+            }
+            @keyframes animate {
+                0%,
+                100% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+                50% {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .get_your_first_donate {
+        .mw {
+            padding: 16px 2vh 100px;
+            .cont {
+                ul {
+                    @include df(row, center, flex-start);
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    li {
+                        width: 100%;
+                        max-width: 200px;
+                        margin: 15px 70px;
+                        @include df(column, center, center);
+                        &:last-child {
+                            .num {
+                                &:after {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .num {
+                            background-color: $main_color3;
+                            width: 120px;
+                            height: 120px;
+                            -webkit-border-radius: 15px;
+                            border-radius: 15px;
+                            @include df(row, center, center);
+                            margin-bottom: 20px;
+                            position: relative;
+                            &:after {
+                                content: '';
+                                width: 180px;
+                                height: 6px;
+                                background-color: $main_color3;
+                                position: absolute;
+                                right: -200px;
+                            }
+                            span {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 36px;
+                                line-height: 49px;
+                                text-align: center;
+                                letter-spacing: 0.02em;
+                                color: $white;
+                            }
+                        }
+                        p {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 22px;
+                            line-height: 30px;
+                            text-align: center;
+                            letter-spacing: 0.02em;
+                            color: $main_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .connect_community {
+        .mw {
+            padding: 50px 2vh;
+            .cont {
+                background-color: $white;
+                -webkit-border-radius: 40px;
+                border-radius: 40px;
+                padding: 60px 70px;
+                @include df(row, space-between, center);
+                .h4 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 33px;
+                    letter-spacing: 0.02em;
+                    color: $main_color3;
+                    max-width: 500px;
+                }
+                .h4_mob {
+                    display: none;
+                }
+                .btn_b {
+                    max-width: 350px;
+                    margin-left: 50px;
+                    .btn_m {
+                        width: 100%;
+                        max-width: 100%;
+                        padding: 25px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .m_title {
+        padding-bottom: 50px;
+        .h3 {
             font-style: normal;
-            font-weight: 500;
-            font-size: 50px;
-            line-height: 60px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 49px;
             letter-spacing: 0.02em;
             color: $white;
-          }
-
-          .h2
-          {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 40px;
-            letter-spacing: 0.02em;
-            color: $main_color;
-            padding-top: 30px;
-            max-width: 500px;
-          }
-
-          .btn_b
-          {
-            margin-top: 40px;
-          }
+            text-align: center;
         }
-
-        .right_side
-        {
-          width: 40%;
-          @include df(column,flex-end,flex-end);
-
-          .m_tab
-          {
-            width: 100%;
-            max-width: 400px;
-            background-color: $main_color3;
-            padding: 15px 30px;
-            @include df(row,flex-start,center);
-            -webkit-border-radius: 20px;
-            border-radius: 20px;
-            margin-bottom: 70px;
-
-            &:nth-child(2)
-            {
-              margin-right: 70px;
+    }
+    .they_trust_us {
+        padding: 100px 0;
+        .cont {
+            $animationSpeed: 30s;
+            @-webkit-keyframes scroll {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-webkit-calc(-370px * 9));
+                    transform: translateX(calc(-370px * 9))
+                }
             }
-
-            &:last-child
-            {
-              margin-bottom: 0;
+            @keyframes scroll {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-webkit-calc(-370px * 9));
+                    transform: translateX(calc(-370px * 9))
+                }
             }
-
-            .icon
-            {
-              width: 70px;
-              min-width: 70px;
-              margin-right: 15px;
-
-              img
-              {
+            @-webkit-keyframes scroll2 {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-webkit-calc(370px * 9));
+                    transform: translateX(calc(370px * 9))
+                }
+            }
+            @keyframes scroll2 {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-webkit-calc(370px * 9));
+                    transform: translateX(calc(370px * 9))
+                }
+            }
+            .slider {
+                position: relative;
                 width: 100%;
-              }
-            }
-
-            .desc
-            {
-              p
-              {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 26px;
-                letter-spacing: 0.02em;
-                color: $white;
-                padding-bottom: 5px;
-              }
-
-              span
-              {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 20px;
-                letter-spacing: 0.02em;
-                color: $main_color;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .bg_line
-    {
-      position: absolute;
-      width: 100%;
-      margin-top: -200px;
-
-      img
-      {
-        width: 100%;
-        -webkit-animation: 30s animate linear infinite;
-        animation: 30s animate linear infinite;
-      }
-
-      @-webkit-keyframes animate
-      {
-        0%,100%
-        {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-
-        50%
-        {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-          opacity: 0.8;
-        }
-      }
-
-      @keyframes animate
-      {
-        0%,100%
-        {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-
-        50%
-        {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-          opacity: 0.8;
-        }
-      }
-    }
-  }
-
-  .get_your_first_donate
-  {
-    .mw
-    {
-      padding: 70px 2vh;
-
-      .cont
-      {
-        ul
-        {
-          @include df(row,center,flex-start);
-          -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-
-          li
-          {
-            width: 100%;
-            max-width: 200px;
-            margin: 15px 70px;
-            @include df(column,center,center);
-
-            &:last-child
-            {
-              .num
-              {
-                &:after
-                {
-                  display: none;
+                .slide-track {
+                    -webkit-animation: scroll $animationSpeed linear infinite;
+                    animation: scroll $animationSpeed linear infinite;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    width: -webkit-calc(370px * 9);
+                    width: calc(370px * 9);
+                    .slide {
+                        @include df(column, center, center);
+                        width: 370px;
+                        padding: 0 25px;
+                        .partner {
+                            width: 320px;
+                            min-width: 320px;
+                            background-color: $main_color3;
+                            padding: 14px 20px;
+                            @include df(row, flex-start, center);
+                            -webkit-border-radius: 10px;
+                            border-radius: 10px;
+                            margin-bottom: 60px;
+                            &:nth-child(2) {
+                                margin-left: -400px;
+                                margin-bottom: 0;
+                            }
+                            .icon {
+                                width: 50px;
+                                min-width: 50px;
+                                margin-right: 20px;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .desc {
+                                p {
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    letter-spacing: 0.02em;
+                                    color: $white;
+                                    padding-bottom: 5px;
+                                }
+                                span {
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    letter-spacing: 0.02em;
+                                    color: $main_color;
+                                }
+                            }
+                        }
+                    }
                 }
-              }
-            }
-
-            .num
-            {
-              background-color: $main_color3;
-              width: 120px;
-              height: 120px;
-              -webkit-border-radius: 15px;
-              border-radius: 15px;
-              @include df(row,center,center);
-              margin-bottom: 20px;
-              position: relative;
-
-              &:after
-              {
-                content: '';
-                width: 180px;
-                height: 6px;
-                background-color: $main_color3;
-                position: absolute;
-                right: -200px;
-              }
-
-              span
-              {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 80px;
-                text-align: center;
-                letter-spacing: 0.02em;
-                color: $main_color;
-              }
-            }
-
-            p
-            {
-              font-style: normal;
-              font-weight: normal;
-              font-size: 22px;
-              line-height: 30px;
-              text-align: center;
-              letter-spacing: 0.02em;
-              color: $main_color;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .connect_community
-  {
-    .mw
-    {
-      padding: 100px 2vh;
-
-      .cont
-      {
-        background-color: $white;
-        -webkit-border-radius: 40px;
-        border-radius: 40px;
-        padding: 60px 70px;
-        @include df(row,space-between,center);
-
-        .h4
-        {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 30px;
-          line-height: 40px;
-          letter-spacing: 0.02em;
-          color: $main_color3;
-          max-width: 500px;
-        }
-
-        .h4_mob
-        {
-          display: none;
-        }
-
-        .btn_b
-        {
-          max-width: 350px;
-          margin-left: 50px;
-
-          .btn_m
-          {
-            width: 100%;
-            max-width: 100%;
-            padding: 25px 20px;
-          }
-        }
-      }
-    }
-  }
-
-  .m_title
-  {
-    padding-bottom: 50px;
-
-    .h3
-    {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 50px;
-      line-height: 60px;
-      letter-spacing: 0.02em;
-      color: $white;
-      text-align: center;
-    }
-  }
-
-  .they_trust_us
-  {
-    padding: 70px 0;
-
-    .cont
-    {
-      $animationSpeed: 30s;
-
-      @-webkit-keyframes scroll {
-         0% { -webkit-transform: translateX(0); transform: translateX(0); }
-         100% { -webkit-transform: translateX(-webkit-calc(-500px * 5)); transform: translateX(calc(-500px * 5))}
-       }
-
-      @keyframes scroll {
-         0% { -webkit-transform: translateX(0); transform: translateX(0); }
-         100% { -webkit-transform: translateX(-webkit-calc(-500px * 5)); transform: translateX(calc(-500px * 5))}
-       }
-
-      @-webkit-keyframes scroll2 {
-        0% { -webkit-transform: translateX(0); transform: translateX(0); }
-        100% { -webkit-transform: translateX(-webkit-calc(500px * 5)); transform: translateX(calc(500px * 5))}
-      }
-
-      @keyframes scroll2 {
-        0% { -webkit-transform: translateX(0); transform: translateX(0); }
-        100% { -webkit-transform: translateX(-webkit-calc(500px * 5)); transform: translateX(calc(500px * 5))}
-      }
-
-      .slider
-      {
-        position: relative;
-        width: 100%;
-
-        .slide-track
-        {
-          -webkit-animation: scroll $animationSpeed linear infinite;
-          animation: scroll $animationSpeed linear infinite;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          width: -webkit-calc(500px * 9);
-          width: calc(500px * 9);
-
-          .slide
-          {
-            @include df(column,center,center);
-            width: 500px;
-            padding: 0 50px;
-
-            .partner
-            {
-              width: 400px;
-              min-width: 400px;
-              background-color: $main_color3;
-              padding: 20px 30px;
-              @include df(row,flex-start,center);
-              -webkit-border-radius: 20px;
-              border-radius: 20px;
-              margin-bottom: 60px;
-
-              &:nth-child(2)
-              {
-                margin-left: -400px;
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 70px;
-                min-width: 70px;
-                margin-right: 15px;
-
-                img
-                {
-                  width: 100%;
+                .slide-track2 {
+                    -webkit-animation: scroll2 $animationSpeed linear infinite;
+                    animation: scroll2 $animationSpeed linear infinite;
+                    margin-left: -webkit-calc(-370px * 5);
+                    margin-left: calc(-370px * 5);
                 }
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 22px;
-                  line-height: 26px;
-                  letter-spacing: 0.02em;
-                  color: $white;
-                  padding-bottom: 5px;
-                }
-
-                span
-                {
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 18px;
-                  line-height: 20px;
-                  letter-spacing: 0.02em;
-                  color: $main_color;
-                }
-              }
             }
-          }
-        }
-
-        .slide-track2
-        {
-          -webkit-animation: scroll2 $animationSpeed linear infinite;
-          animation: scroll2 $animationSpeed linear infinite;
-          margin-left: -webkit-calc(-500px * 5);
-          margin-left: calc(-500px * 5);
-        }
-      }
-
-      .they_trust_us_slider
-      {
-        width: 100%;
-        margin: 0 auto;
-        display: none;
-
-        .owl-stage-outer
-        {
-        }
-
-        .owl-item1
-        {
-          margin: 0 auto;
-        }
-
-        .slide
-        {
-          @include df(column,center,center);
-
-          .partner
-          {
-            width: 400px;
-            min-width: 400px;
-            background-color: $main_color3;
-            padding: 20px 30px;
-            @include df(row,flex-start,center);
-            -webkit-border-radius: 20px;
-            border-radius: 20px;
-            margin-bottom: 60px;
-
-            &:nth-child(2)
-            {
-              margin-left: -400px;
-              margin-bottom: 0;
-            }
-
-            .icon
-            {
-              width: 70px;
-              min-width: 70px;
-              margin-right: 15px;
-
-              img
-              {
+            .they_trust_us_slider {
                 width: 100%;
-              }
+                margin: 0 auto;
+                display: none;
+                .owl-stage-outer {}
+                .owl-item1 {
+                    margin: 0 auto;
+                }
+                .slide {
+                    @include df(column, center, center);
+                    .partner {
+                        width: 400px;
+                        min-width: 400px;
+                        background-color: $main_color3;
+                        padding: 20px 30px;
+                        @include df(row, flex-start, center);
+                        -webkit-border-radius: 20px;
+                        border-radius: 20px;
+                        margin-bottom: 60px;
+                        &:nth-child(2) {
+                            margin-left: -400px;
+                            margin-bottom: 0;
+                        }
+                        .icon {
+                            width: 70px;
+                            min-width: 70px;
+                            margin-right: 15px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .desc {
+                            p {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 22px;
+                                line-height: 26px;
+                                letter-spacing: 0.02em;
+                                color: $white;
+                                padding-bottom: 5px;
+                            }
+                            span {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 20px;
+                                letter-spacing: 0.02em;
+                                color: $main_color;
+                            }
+                        }
+                    }
+                }
             }
-
-            .desc
-            {
-              p
-              {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 26px;
-                letter-spacing: 0.02em;
-                color: $white;
-                padding-bottom: 5px;
-              }
-
-              span
-              {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 20px;
-                letter-spacing: 0.02em;
-                color: $main_color;
-              }
+            .they_trust_us_slider2 {
+                .slide {
+                    .partner {
+                        margin-left: -400px;
+                        -webkit-box-pack: end;
+                        -webkit-justify-content: flex-end;
+                        -ms-flex-pack: end;
+                        justify-content: flex-end;
+                        .icon {
+                            -webkit-box-ordinal-group: 4;
+                            -webkit-order: 3;
+                            -ms-flex-order: 3;
+                            order: 3;
+                        }
+                        .desc {
+                            p,
+                            span {
+                                display: block;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-
-      .they_trust_us_slider2
-      {
-        .slide
-        {
-          .partner
-          {
-            margin-left: -400px;
-            -webkit-box-pack: end;
-            -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-            justify-content: flex-end;
-
-            .icon
-            {
-              -webkit-box-ordinal-group: 4;
-              -webkit-order: 3;
-              -ms-flex-order: 3;
-              order: 3;
-            }
-
-            .desc
-            {
-              p,span
-              {
-                display: block;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
     }
-  }
-
-  .benefits
-  {
-    .mw
-    {
-      padding: 70px 2vh;
-
-      .cont
-      {
-        ul
-        {
-          @include df(row,center,flex-start);
-          -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-
-          li
-          {
-            height: 200px;
-            background: $main_color3;
-            -webkit-border-radius: 40px;
-            border-radius: 40px;
-            padding: 40px;
-            width: 100%;
-            max-width: 450px;
-            margin: 30px;
-
-            .h5
-            {
-              font-style: normal;
-              font-weight: 500;
-              font-size: 40px;
-              line-height: 50px;
-              text-align: center;
-              letter-spacing: 0.02em;
-              color: $white;
-              padding-bottom: 15px;
+    .benefits {
+        .mw {
+            padding: 50px 2vh 125px;
+            .cont {
+                ul {
+                    @include df(row, center, stretch);
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    li {
+                        background: $main_color3;
+                        -webkit-border-radius: 20px;
+                        border-radius: 20px;
+                        padding: 30px 40px;
+                        width: 100%;
+                        max-width: 330px;
+                        margin: 25px 42px;
+                        .h5 {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 33px;
+                            letter-spacing: 0.02em;
+                            color: $white;
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 18px;
+                            letter-spacing: 0.02em;
+                            color: $main_color;
+                        }
+                    }
+                }
             }
-
-            p
-            {
-              font-style: normal;
-              font-weight: normal;
-              font-size: 20px;
-              line-height: 24px;
-              text-align: center;
-              letter-spacing: 0.02em;
-              color: $main_color;
-            }
-          }
         }
-      }
     }
-  }
-
-  .convenient_application
-  {
-    .mw
-    {
-      padding: 70px 2vh;
-
-      .cont
-      {
-        margin-top: 70px;
-
-        .line
-        {
-          background: $main_color3;
-          -webkit-border-radius: 40px;
-          border-radius: 40px;
-          @include df(row,space-between,center);
-          height: 300px;
-          padding: 0 70px;
-          margin-bottom: 60px;
-
-          &:last-child
-          {
-            margin-bottom: 0;
-          }
-
-          .l_side
-          {
-            padding: 50px 0;
-            width: 70%;
-
-            .h4
-            {
-              font-style: normal;
-              font-weight: 500;
-              font-size: 40px;
-              line-height: 50px;
-              letter-spacing: 0.02em;
-              color: $white;
-              padding-bottom: 20px;
+    .convenient_application {
+        .mw {
+            padding: 100px 2vh;
+            .cont {
+                margin-top: 45px;
+                .line {
+                    background: $main_color3;
+                    -webkit-border-radius: 40px;
+                    border-radius: 40px;
+                    @include df(row, space-between, center);
+                    height: 160px;
+                    padding: 0 40px;
+                    max-width: 716px;
+                    margin: 0 0 0 auto;
+                    margin-bottom: 45px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .l_side {
+                        width: 100%;
+                        max-width: 400px;
+                        margin-right: 20px;
+                        .h4 {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 33px;
+                            letter-spacing: 0.02em;
+                            color: $white;
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 18px;
+                            letter-spacing: 0.02em;
+                            color: $main_color;
+                        }
+                    }
+                    .r_side {
+                        @include df(row, center, flex-end);
+                        height: 100%;
+                        .img {
+                            width: 100%;
+                            -webkit-border-top-left-radius: 10px;
+                            border-top-left-radius: 10px;
+                            -webkit-border-top-right-radius: 10px;
+                            border-top-right-radius: 10px;
+                            overflow: hidden;
+                            @include df(row, center, flex-end);
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .line2 {
+                    margin: auto 0 0 0;
+                    margin-bottom: 45px;
+                    .l_side {
+                        margin-right: 0;
+                    }
+                    .r_side {
+                        margin-right: 34px;
+                        min-width: 257px;
+                    }
+                }
             }
-
-            p
-            {
-              font-style: normal;
-              font-weight: normal;
-              font-size: 20px;
-              line-height: 26px;
-              letter-spacing: 0.02em;
-              color: $main_color;
-            }
-          }
-
-          .r_side
-          {
-            width: 30%;
-            @include df(row,center,flex-end);
-            height: 100%;
-
-            .img
-            {
-              width: 100%;
-              -webkit-border-top-left-radius: 10px;
-              border-top-left-radius: 10px;
-              -webkit-border-top-right-radius: 10px;
-              border-top-right-radius: 10px;
-              overflow: hidden;
-              @include df(row,center,flex-end);
-
-              img
-              {
-                width: 100%;
-              }
-            }
-          }
         }
-
-        .line2
-        {
-          .l_side
-          {
-            text-align: right;
-            width: 60%;
-          }
-
-          .r_side
-          {
-            width: 40%;
-          }
-        }
-      }
     }
-  }
-
-  .contacts
-  {
-    background-color: $main_color3;
-    margin-top: 100px;
-
-    .mw
-    {
-      padding: 50px 2vh;
-
-      .cont
-      {
-        @include df(row,space-between,flex-start);
-
-        .left_side
-        {
-          width: 25%;
-
-          .logo
-          {
-            width: 100%;
-            max-width: 300px;
-            padding-bottom: 40px;
-
-            img
-            {
-              width: 100%;
-            }
-          }
-
-          p
-          {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            color: $main_color;
-          }
-
-          .banks
-          {
+    .get_your_first_donate2 {
+        .mw {
             padding-top: 50px;
-
-            img
-            {
-              width: 100%;
-            }
-          }
         }
-
-        .right_side
-        {
-          width: 65%;
-
-          .line
-          {
-            @include df(row,space-between,flex-start);
-            width: 100%;
-            margin-top: 15px;
-
-            .l_side
-            {
-              width: 45%;
-
-              p
-              {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 26px;
-                letter-spacing: 0.02em;
-                color: $main_color;
-                padding-bottom: 15px;
-              }
-            }
-
-            .r_side
-            {
-              width: 45%;
-
-              a
-              {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 26px;
-                letter-spacing: 0.02em;
-                color: $main_color;
-                margin-bottom: 15px;
-                display: block;
-                text-align: right;
-
-                &:hover
-                {
-                  color: $main_color2;
+    }
+    .contacts {
+        background-color: $main_color3;
+        margin-top: 100px;
+        .mw {
+            padding: 45px 2vh 40px;
+            .cont {
+                @include df(row, space-between, center);
+                .left_side {
+                    width: 38%;
+                    .logo {
+                        width: 100%;
+                        max-width: 255px;
+                        padding-bottom: 30px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        letter-spacing: 0.02em;
+                        color: $main_color;
+                    }
+                    .banks {
+                        padding-top: 32px;
+                        max-width: 344px;
+                        img {
+                            width: 100%;
+                        }
+                    }
                 }
-              }
+                .right_side {
+                    width: 55%;
+                    .line {
+                        @include df(row, space-between, flex-start);
+                        width: 100%;
+                        .l_side {
+                            width: 45%;
+                            p {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 22px;
+                                letter-spacing: 0.02em;
+                                color: $main_color;
+                                padding-bottom: 10px;
+                            }
+                        }
+                        .r_side {
+                            width: 45%;
+                            a {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 22px;
+                                letter-spacing: 0.02em;
+                                color: $main_color;
+                                margin-bottom: 10px;
+                                display: block;
+                                text-align: right;
+                                &:hover {
+                                    color: $main_color2;
+                                }
+                            }
+                        }
+                    }
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        color: $main_color;
+                        display: block;
+                        margin-top: 20px;
+                    }
+                }
             }
-          }
-
-          span
-          {
+        }
+    }
+    .footer {
+        margin-top: 10px;
+        background-color: $main_color3;
+        .mw {
+            padding: 25px 2vh;
+            .cont {
+                ul {
+                    @include df(row, center, center);
+                    li {
+                        @include df(row, flex-start, center);
+                        margin: 0 150px;
+                        .icon {
+                            width: 28px;
+                            min-width: 28px;
+                            margin-right: 20px;
+                            @include df(row, center, center);
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        a {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            letter-spacing: 0.02em;
+                            color: $main_color;
+                            &:hover {
+                                color: $main_color2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 20px 2vh;
+        p {
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 16px;
+            line-height: 22px;
             letter-spacing: 0.02em;
+            text-align: center;
             color: $main_color;
-            display: block;
-            margin-top: 30px;
-          }
         }
-      }
     }
-  }
-
-  .footer
-  {
-    margin-top: 30px;
-    background-color: $main_color3;
-
-    .mw
-    {
-      padding: 30px 2vh;
-
-      .cont
-      {
-        ul
-        {
-          @include df(row,center,center);
-
-          li
-          {
-            @include df(row,flex-start,center);
-            margin: 0 50px;
-
-            .icon
-            {
-              width: 40px;
-              min-width: 40px;
-              margin-right: 15px;
-              @include df(row,center,center);
-
-              img
-              {
-                width: 100%;
-              }
-            }
-
-            a
-            {
-              font-style: normal;
-              font-weight: 500;
-              font-size: 22px;
-              line-height: 26px;
-              letter-spacing: 0.02em;
-              color: $main_color;
-
-              &:hover
-              {
-                color: $main_color2;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .copyright
-  {
-    padding: 30px 2vh;
-
-    p
-    {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-      letter-spacing: 0.02em;
-      text-align: center;
-      color: $main_color;
-    }
-  }
 }
 
-
-
-
-@media (max-width: 575px)
-{
-  .btn_b
-  {
-    .btn_m
-    {
-      padding: 15px;
-      font-size: 18px;
-    }
-  }
-
-  .page
-  {
-    .header
-    {
-      .mw
-      {
-        padding: 30px 2vh 0;
-
-        .logo
-        {
-          max-width: 200px;
+@media (max-width: 575px) {
+    .btn_b {
+        .btn_m {
+            padding: 15px;
+            font-size: 18px;
         }
-      }
     }
-
-    .main
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          @include df(row,center,center);
-
-          .left_side
-          {
-            width: 100%;
-
-            .h1
-            {
-              font-size: 30px;
-              line-height: 40px;
-            }
-
-            .h2
-            {
-              font-size: 20px;
-              line-height: 24px;
-              padding-top: 20px;
-            }
-
-            .btn_b
-            {
-              margin-top: 30px;
-            }
-          }
-
-          .right_side
-          {
-            width: 100%;
-            margin-top: 40px;
-
-            .m_tab
-            {
-              width: 90%;
-              max-width: 400px;
-              padding: 10px 20px;
-              margin-bottom: 30px;
-              -webkit-border-radius: 10px;
-              border-radius: 10px;
-
-              &:nth-child(2)
-              {
-                margin-right: 50px;
-              }
-
-              &:last-child
-              {
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 18px;
-                  line-height: 24px;
+    .page {
+        .header {
+            .mw {
+                padding: 30px 2vh 0;
+                .logo {
+                    max-width: 200px;
                 }
-
-                span
-                {
-                  font-size: 16px;
-                }
-              }
             }
-          }
         }
-      }
-
-      .bg_line
-      {
-        margin-top: 0;
-        bottom: 100px;
-      }
-    }
-
-    .get_your_first_donate
-    {
-      display: none;
-
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          ul
-          {
-
-            li
-            {
-              margin: 15px 10px;
-
-              .num
-              {
-                width: 80px;
-                height: 80px;
-
-                &:after
-                {
-                  display: none;
+        .main {
+            .mw {
+                padding: 60px 2vh;
+                .cont {
+                    @include df(row, center, center);
+                    .left_side {
+                        width: 100%;
+                        .h1 {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                        .h2 {
+                            font-size: 18px;
+                            line-height: 24px;
+                            padding-top: 20px;
+                        }
+                        .btn_b {
+                            margin-top: 30px;
+                        }
+                    }
+                    .right_side {
+                        width: 100%;
+                        margin-top: 40px;
+                        .m_tab {
+                            width: 90%;
+                            max-width: 400px;
+                            padding: 10px 20px;
+                            margin-bottom: 30px;
+                            -webkit-border-radius: 10px;
+                            border-radius: 10px;
+                            &:nth-child(2) {
+                                margin-right: 20px;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            .icon {
+                                width: 50px;
+                                min-width: 50px;
+                                margin-right: 10px;
+                            }
+                            .desc {
+                                p {
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
                 }
-
-                span
-                {
-                  font-size: 40px;
+                .arrow_down {
+                    padding-top: 100px;
                 }
-              }
-
-              p
-              {
-                font-size: 20px;
-                line-height: 24px;
-              }
             }
-          }
+            .bg_line {
+                margin-top: 0;
+                bottom: 100px;
+            }
         }
-      }
-    }
-
-    .connect_community
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          padding: 40px 20px;
-          -webkit-border-radius: 15px;
-          border-radius: 15px;
-          @include df(column,center,center);
-          text-align: center;
-
-          .h4_desc
-          {
+        .get_your_first_donate {
             display: none;
-          }
-
-          .h4_mob
-          {
-            display: block;
-          }
-
-          .h4
-          {
-            font-size: 22px;
-            line-height: 30px;
-          }
-
-          .btn_b
-          {
-            max-width: 400px;
-            margin: 20px auto 0;
-
-            .btn_m
-            {
-              padding: 20px 10px;
-            }
-          }
-        }
-      }
-    }
-
-    .m_title
-    {
-      padding-bottom: 30px;
-
-      .h3
-      {
-        font-size: 30px;
-        line-height: 36px;
-      }
-    }
-
-    .they_trust_us
-    {
-      padding: 50px 0;
-
-      .cont
-      {
-        $animationSpeed: 30s;
-
-        @-webkit-keyframes scroll {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(-260px * 5)); transform: translateX(calc(-260px * 5))}
-        }
-
-        @keyframes scroll {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(-260px * 5)); transform: translateX(calc(-260px * 5))}
-        }
-
-        @-webkit-keyframes scroll2 {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(260px * 5)); transform: translateX(calc(260px * 5))}
-        }
-
-        @keyframes scroll2 {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(260px * 5)); transform: translateX(calc(260px * 5))}
-        }
-
-        .slider
-        {
-          position: relative;
-          width: 100%;
-
-          .slide-track
-          {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            width: -webkit-calc(260px * 9);
-            width: calc(260px * 9);
-
-            .slide
-            {
-              @include df(column,center,center);
-              width: 260px;
-              padding: 0 10px;
-
-              .partner
-              {
-                width: 240px;
-                min-width: 240px;
-                padding: 15px 10px;
-                margin-bottom: 20px;
-                min-height: 100px;
-                -webkit-border-radius: 10px;
-                border-radius: 10px;
-
-                &:nth-child(1)
-                {
-                  margin-right: -20px;
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    ul {
+                        li {
+                            margin: 15px 10px;
+                            .num {
+                                width: 80px;
+                                height: 80px;
+                                &:after {
+                                    display: none;
+                                }
+                                span {
+                                    font-size: 40px;
+                                }
+                            }
+                            p {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
                 }
-
-                &:nth-child(2)
-                {
-                  margin-left: -20px;
-                  margin-bottom: 0;
-                }
-
-                .icon
-                {
-                  width: 50px;
-                  min-width: 50px;
-                  margin-right: 10px;
-                }
-
-                .desc
-                {
-                  p
-                  {
-                    font-size: 18px;
-                    line-height: 20px;
-                  }
-
-                  span
-                  {
-                    font-size: 14px;
-                    line-height: 18px;
-                  }
-                }
-              }
             }
-          }
-
-          .slide-track2
-          {
-            margin-left: -webkit-calc(-260px * 5);
-            margin-left: calc(-260px * 5);
-          }
         }
-
-        .slide
-        {
-          .partner
-          {
-            width: 240px;
-            min-width: 240px;
-            padding: 15px 10px;
-            margin-bottom: 20px;
-            min-height: 100px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-
-            &:nth-child(1)
-            {
-              margin-right: -20px;
+        .connect_community {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    padding: 30px 10px;
+                    -webkit-border-radius: 15px;
+                    border-radius: 15px;
+                    @include df(column, center, center);
+                    text-align: center;
+                    .h4_desc {
+                        display: none;
+                    }
+                    .h4_mob {
+                        display: block;
+                    }
+                    .h4 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                    .btn_b {
+                        max-width: 400px;
+                        margin: 20px auto 0;
+                        .btn_m {
+                            padding: 15px 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
-
-            &:nth-child(2)
-            {
-              margin-left: -20px;
-              margin-bottom: 0;
+        }
+        .m_title {
+            padding-bottom: 30px;
+            .h3 {
+                font-size: 26px;
+                line-height: 32px;
             }
-
-            .icon
-            {
-              width: 50px;
-              min-width: 50px;
-              margin-right: 10px;
+        }
+        .they_trust_us {
+            padding: 50px 0;
+            .cont {
+                $animationSpeed: 30s;
+                @-webkit-keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(-260px * 5));
+                        transform: translateX(calc(-260px * 5))
+                    }
+                }
+                @keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(-260px * 5));
+                        transform: translateX(calc(-260px * 5))
+                    }
+                }
+                @-webkit-keyframes scroll2 {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(260px * 5));
+                        transform: translateX(calc(260px * 5))
+                    }
+                }
+                @keyframes scroll2 {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(260px * 5));
+                        transform: translateX(calc(260px * 5))
+                    }
+                }
+                .slider {
+                    position: relative;
+                    width: 100%;
+                    .slide-track {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: -webkit-calc(260px * 9);
+                        width: calc(260px * 9);
+                        .slide {
+                            @include df(column, center, center);
+                            width: 260px;
+                            padding: 0 10px;
+                            .partner {
+                                width: 240px;
+                                min-width: 240px;
+                                padding: 15px 10px;
+                                margin-bottom: 20px;
+                                min-height: 100px;
+                                -webkit-border-radius: 10px;
+                                border-radius: 10px;
+                                &:nth-child(1) {
+                                    margin-right: -20px;
+                                }
+                                &:nth-child(2) {
+                                    margin-left: -20px;
+                                    margin-bottom: 0;
+                                }
+                                .icon {
+                                    width: 50px;
+                                    min-width: 50px;
+                                    margin-right: 10px;
+                                }
+                                .desc {
+                                    p {
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                    }
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slide-track2 {
+                        margin-left: -webkit-calc(-260px * 5);
+                        margin-left: calc(-260px * 5);
+                    }
+                }
+                .slide {
+                    .partner {
+                        width: 240px;
+                        min-width: 240px;
+                        padding: 15px 10px;
+                        margin-bottom: 20px;
+                        min-height: 100px;
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                        &:nth-child(1) {
+                            margin-right: -20px;
+                        }
+                        &:nth-child(2) {
+                            margin-left: -20px;
+                            margin-bottom: 0;
+                        }
+                        .icon {
+                            width: 50px;
+                            min-width: 50px;
+                            margin-right: 10px;
+                        }
+                        .desc {
+                            p {
+                                font-size: 18px;
+                                line-height: 20px;
+                            }
+                            span {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+                .they_trust_us_slider {
+                    .slide {
+                        .partner {
+                            width: 240px;
+                            min-width: 240px;
+                            padding: 15px 10px;
+                            margin-bottom: 20px;
+                            min-height: 100px;
+                            -webkit-border-radius: 10px;
+                            border-radius: 10px;
+                            &:nth-child(1) {
+                                margin-right: -20px;
+                            }
+                            &:nth-child(2) {
+                                margin-left: -20px;
+                                margin-bottom: 0;
+                            }
+                            .icon {
+                                width: 50px;
+                                min-width: 50px;
+                                margin-right: 10px;
+                            }
+                            .desc {
+                                p {
+                                    font-size: 18px;
+                                    line-height: 20px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .they_trust_us_slider2 {
+                    .slide {
+                        .partner {
+                            margin-left: 0;
+                            -webkit-box-pack: end;
+                            -webkit-justify-content: flex-end;
+                            -ms-flex-pack: end;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
             }
-
-            .desc
-            {
-              p
-              {
-                font-size: 18px;
-                line-height: 20px;
-              }
-
-              span
-              {
+        }
+        .benefits {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    ul {
+                        li {
+                            -webkit-border-radius: 15px;
+                            border-radius: 15px;
+                            padding: 20px 15px;
+                            margin: 15px 10px;
+                            .h5 {
+                                font-size: 22px;
+                                line-height: 26px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .convenient_application {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    margin-top: 0;
+                    .line {
+                        -webkit-border-radius: 15px;
+                        border-radius: 15px;
+                        @include df(column, center, center);
+                        height: auto;
+                        padding: 0 20px;
+                        margin-bottom: 30px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .l_side {
+                            padding: 30px 0;
+                            width: 100%;
+                            -webkit-box-ordinal-group: 0;
+                            -webkit-order: -1;
+                            -ms-flex-order: -1;
+                            order: -1;
+                            margin-right: 0;
+                            .h4 {
+                                font-size: 22px;
+                                line-height: 28px;
+                                padding-bottom: 10px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                        .r_side {
+                            width: 100%;
+                            .img {
+                                max-width: 240px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .line2 {
+                        .l_side {
+                            text-align: right;
+                            width: 100%;
+                        }
+                        .r_side {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .contacts {
+            margin-top: 0;
+            .mw {
+                padding: 30px 2vh;
+                .cont {
+                    @include df(column, center, center);
+                    .left_side {
+                        width: 100%;
+                        .logo {
+                            width: 100%;
+                            max-width: 200px;
+                            padding-bottom: 20px;
+                            margin: 0 auto;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-align: center;
+                        }
+                        .banks {
+                            padding-top: 20px;
+                            margin: 0 auto;
+                            max-width: 200px;
+                        }
+                    }
+                    .right_side {
+                        width: 100%;
+                        margin-top: 20px;
+                        .line {
+                            .l_side {
+                                p {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                            .r_side {
+                                a {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            .mw {
+                padding: 20px 2vh;
+                .cont {
+                    ul {
+                        @include df(row, center, center);
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        li {
+                            @include df(row, center, center);
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            padding: 15px 2vh;
+            p {
                 font-size: 14px;
-                line-height: 18px;
-              }
             }
-          }
         }
-
-        .they_trust_us_slider
-        {
-          .slide
-          {
-            .partner
-            {
-              width: 240px;
-              min-width: 240px;
-              padding: 15px 10px;
-              margin-bottom: 20px;
-              min-height: 100px;
-              -webkit-border-radius: 10px;
-              border-radius: 10px;
-
-              &:nth-child(1)
-              {
-                margin-right: -20px;
-              }
-
-              &:nth-child(2)
-              {
-                margin-left: -20px;
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 18px;
-                  line-height: 20px;
-                }
-
-                span
-                {
-                  font-size: 14px;
-                  line-height: 18px;
-                }
-              }
-            }
-          }
-        }
-
-        .they_trust_us_slider2
-        {
-          .slide
-          {
-            .partner
-            {
-              margin-left: 0;
-              -webkit-box-pack: end;
-              -webkit-justify-content: flex-end;
-              -ms-flex-pack: end;
-              justify-content: flex-end;
-            }
-          }
-        }
-      }
     }
-
-    .benefits
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            li
-            {
-              height: auto;
-              -webkit-border-radius: 15px;
-              border-radius: 15px;
-              padding: 30px 15px;
-              margin: 15px 10px;
-
-              .h5
-              {
-                font-size: 26px;
-                line-height: 30px;
-              }
-
-              p
-              {
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .convenient_application
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          margin-top: 0;
-
-          .line
-          {
-            -webkit-border-radius: 15px;
-            border-radius: 15px;
-            @include df(column,center,center);
-            height: auto;
-            padding: 0 20px;
-            margin-bottom: 30px;
-
-            &:last-child
-            {
-              margin-bottom: 0;
-            }
-
-            .l_side
-            {
-              padding: 30px 0;
-              width: 100%;
-              -webkit-box-ordinal-group: 0;
-              -webkit-order: -1;
-              -ms-flex-order: -1;
-              order: -1;
-
-              .h4
-              {
-                font-size: 24px;
-                line-height: 30px;
-                padding-bottom: 15px;
-              }
-
-              p
-              {
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-
-            .r_side
-            {
-              width: 100%;
-
-              .img
-              {
-                max-width: 240px;
-                margin: 0 auto;
-              }
-            }
-          }
-
-          .line2
-          {
-            .l_side
-            {
-              text-align: right;
-              width: 100%;
-            }
-
-            .r_side
-            {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
-    .contacts
-    {
-      margin-top: 0;
-
-      .mw
-      {
-        padding: 30px 2vh;
-
-        .cont
-        {
-          @include df(column,center,center);
-
-          .left_side
-          {
-            width: 100%;
-
-            .logo
-            {
-              width: 100%;
-              max-width: 200px;
-              padding-bottom: 20px;
-              margin: 0 auto;
-            }
-
-            p
-            {
-              font-size: 18px;
-              line-height: 22px;
-              text-align: center;
-            }
-
-            .banks
-            {
-              padding-top: 20px;
-              margin: 0 auto;
-              max-width: 200px;
-            }
-          }
-
-          .right_side
-          {
-            width: 100%;
-
-            .line
-            {
-              .l_side
-              {
-                p
-                {
-                  font-size: 14px;
-                  line-height: 20px;
-                  padding-bottom: 10px;
-                }
-              }
-
-              .r_side
-              {
-                a
-                {
-                  font-size: 14px;
-                  line-height: 20px;
-                  margin-bottom: 10px;
-                }
-              }
-            }
-
-            span
-            {
-              font-size: 14px;
-              line-height: 20px;
-              margin-top: 20px;
-            }
-          }
-        }
-      }
-    }
-
-    .footer
-    {
-      margin-top: 20px;
-
-      .mw
-      {
-        padding: 20px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            @include df(row,center,center);
-            -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-
-            li
-            {
-              @include df(row,center,center);
-              margin: 10px;
-
-              .icon
-              {
-                width: 30px;
-                min-width: 30px;
-                margin-right: 10px;
-              }
-
-              a
-              {
-                font-size: 18px;
-                line-height: 24px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .copyright
-    {
-      padding: 20px 2vh;
-
-      p
-      {
-        font-size: 14px;
-      }
-    }
-  }
 }
 
-
-@media (min-width: 576px) and (max-width: 767px)
-{
-  .btn_b
-  {
-    .btn_m
-    {
-      padding: 15px;
-      font-size: 18px;
+@media (min-width: 576px) and (max-width: 767px) {
+    .btn_b {
+        .btn_m {
+            padding: 15px;
+            font-size: 18px;
+        }
     }
-  }
-
-  .page
-  {
-    .header
-    {
-      .mw
-      {
-        padding: 30px 2vh;
-
-        .logo
-        {
-          max-width: 300px;
+    .page {
+        .header {
+            .mw {
+                padding: 30px 2vh;
+                .logo {
+                    max-width: 300px;
+                }
+            }
         }
-      }
+        .main {
+            .mw {
+                padding: 60px 2vh;
+                .cont {
+                    .left_side {
+                        .h1 {
+                            font-size: 35px;
+                            line-height: 50px;
+                        }
+                        .h2 {
+                            font-size: 18px;
+                            line-height: 24px;
+                            padding-top: 20px;
+                        }
+                        .btn_b {
+                            margin-top: 30px;
+                        }
+                    }
+                    .right_side {
+                        .m_tab {
+                            width: 90%;
+                            max-width: 400px;
+                            padding: 10px 15px;
+                            margin-bottom: 30px;
+                            &:nth-child(2) {
+                                margin-right: 50px;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            .icon {
+                                width: 40px;
+                                min-width: 40px;
+                                margin-right: 10px;
+                            }
+                            .desc {
+                                p {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .arrow_down {
+                    padding-top: 100px;
+                }
+            }
+            .bg_line {
+                margin-top: 0;
+            }
+        }
+        .get_your_first_donate {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    ul {
+                        li {
+                            margin: 15px 10px;
+                            .num {
+                                width: 80px;
+                                height: 80px;
+                                &:after {
+                                    display: none;
+                                }
+                                span {
+                                    font-size: 40px;
+                                }
+                            }
+                            p {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .connect_community {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    padding: 40px 20px;
+                    -webkit-border-radius: 30px;
+                    border-radius: 30px;
+                    .h4 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                    .btn_b {
+                        margin-left: 20px;
+                        max-width: 240px;
+                        .btn_m {
+                            padding: 15px 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .m_title {
+            padding-bottom: 30px;
+            .h3 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        .they_trust_us {
+            padding: 50px 0;
+            .cont {
+                $animationSpeed: 30s;
+                @-webkit-keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(-260px * 5));
+                        transform: translateX(calc(-260px * 5))
+                    }
+                }
+                @keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(-260px * 5));
+                        transform: translateX(calc(-260px * 5))
+                    }
+                }
+                @-webkit-keyframes scroll2 {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(260px * 5));
+                        transform: translateX(calc(260px * 5))
+                    }
+                }
+                @keyframes scroll2 {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(260px * 5));
+                        transform: translateX(calc(260px * 5))
+                    }
+                }
+                .slider {
+                    position: relative;
+                    width: 100%;
+                    .slide-track {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: -webkit-calc(260px * 9);
+                        width: calc(260px * 9);
+                        .slide {
+                            @include df(column, center, center);
+                            width: 260px;
+                            padding: 0 10px;
+                            .partner {
+                                width: 240px;
+                                min-width: 240px;
+                                padding: 15px 10px;
+                                margin-bottom: 20px;
+                                min-height: 100px;
+                                -webkit-border-radius: 10px;
+                                border-radius: 10px;
+                                &:nth-child(1) {
+                                    margin-right: -20px;
+                                }
+                                &:nth-child(2) {
+                                    margin-left: -20px;
+                                    margin-bottom: 0;
+                                }
+                                .icon {
+                                    width: 50px;
+                                    min-width: 50px;
+                                    margin-right: 10px;
+                                }
+                                .desc {
+                                    p {
+                                        font-size: 18px;
+                                        line-height: 20px;
+                                    }
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slide-track2 {
+                        margin-left: -webkit-calc(-260px * 5);
+                        margin-left: calc(-260px * 5);
+                    }
+                }
+                .they_trust_us_slider {
+                    .slide {
+                        .partner {
+                            width: 240px;
+                            min-width: 240px;
+                            padding: 15px 10px;
+                            margin-bottom: 20px;
+                            min-height: 100px;
+                            .icon {
+                                width: 50px;
+                                min-width: 50px;
+                                margin-right: 10px;
+                            }
+                            .desc {
+                                p {
+                                    font-size: 18px;
+                                    line-height: 20px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .they_trust_us_slider2 {
+                    .slide {
+                        .partner {
+                            margin-left: -100px;
+                            -webkit-box-pack: end;
+                            -webkit-justify-content: flex-end;
+                            -ms-flex-pack: end;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+        .benefits {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    ul {
+                        li {
+                            padding: 30px 15px;
+                            margin: 15px 2%;
+                            width: 46%;
+                            .h5 {
+                                font-size: 22px;
+                                line-height: 30px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .convenient_application {
+            .mw {
+                padding: 50px 2vh;
+                .cont {
+                    margin-top: 0;
+                    .line {
+                        -webkit-border-radius: 30px;
+                        border-radius: 30px;
+                        @include df(column, center, center);
+                        height: auto;
+                        padding: 0 20px;
+                        margin-bottom: 30px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .l_side {
+                            padding: 30px 0;
+                            width: 100%;
+                            -webkit-box-ordinal-group: 0;
+                            -webkit-order: -1;
+                            -ms-flex-order: -1;
+                            order: -1;
+                            margin-right: 0;
+                            .h4 {
+                                font-size: 24px;
+                                line-height: 30px;
+                                padding-bottom: 15px;
+                            }
+                            p {
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                        }
+                        .r_side {
+                            width: 100%;
+                            margin-right: 0;
+                            .img {
+                                max-width: 240px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .line2 {
+                        .l_side {
+                            text-align: right;
+                            width: 100%;
+                        }
+                        .r_side {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contacts {
+            margin-top: 0;
+            .mw {
+                padding: 30px 2vh;
+                .cont {
+                    @include df(column, center, center);
+                    .left_side {
+                        width: 100%;
+                        .logo {
+                            width: 100%;
+                            max-width: 200px;
+                            padding-bottom: 20px;
+                            margin: 0 auto;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-align: center;
+                        }
+                        .banks {
+                            padding-top: 20px;
+                            margin: 0 auto;
+                            max-width: 200px;
+                        }
+                    }
+                    .right_side {
+                        width: 100%;
+                        margin-top: 15px;
+                        .line {
+                            .l_side {
+                                p {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                            .r_side {
+                                a {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            .mw {
+                padding: 20px 2vh;
+                .cont {
+                    ul {
+                        @include df(row, center, center);
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        li {
+                            @include df(row, center, center);
+                            margin: 10px;
+                            .icon {
+                                width: 30px;
+                                min-width: 30px;
+                                margin-right: 10px;
+                            }
+                            a {
+                                font-size: 18px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            padding: 20px 2vh;
+            p {
+                font-size: 14px;
+            }
+        }
     }
-
-    .main
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          .left_side
-          {
-            .h1
-            {
-              font-size: 35px;
-              line-height: 50px;
-            }
-
-            .h2
-            {
-              font-size: 20px;
-              line-height: 24px;
-              padding-top: 20px;
-            }
-
-            .btn_b
-            {
-              margin-top: 30px;
-            }
-          }
-
-          .right_side
-          {
-            .m_tab
-            {
-              width: 90%;
-              max-width: 400px;
-              padding: 10px 20px;
-              margin-bottom: 30px;
-
-              &:nth-child(2)
-              {
-                margin-right: 50px;
-              }
-
-              &:last-child
-              {
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 18px;
-                  line-height: 24px;
-                }
-
-                span
-                {
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .bg_line
-      {
-        margin-top: 0;
-      }
-    }
-
-    .get_your_first_donate
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          ul
-          {
-
-            li
-            {
-              margin: 15px 10px;
-
-              .num
-              {
-                width: 80px;
-                height: 80px;
-
-                &:after
-                {
-                  display: none;
-                }
-
-                span
-                {
-                  font-size: 40px;
-                }
-              }
-
-              p
-              {
-                font-size: 20px;
-                line-height: 24px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .connect_community
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          padding: 40px 20px;
-          -webkit-border-radius: 30px;
-          border-radius: 30px;
-
-          .h4
-          {
-            font-size: 24px;
-            line-height: 30px;
-          }
-
-          .btn_b
-          {
-            margin-left: 20px;
-            max-width: 240px;
-
-            .btn_m
-            {
-              padding: 20px 10px;
-            }
-          }
-        }
-      }
-    }
-
-    .m_title
-    {
-      padding-bottom: 30px;
-
-      .h3
-      {
-        font-size: 35px;
-        line-height: 40px;
-      }
-    }
-
-    .they_trust_us
-    {
-      padding: 50px 0;
-
-      .cont
-      {
-        $animationSpeed: 30s;
-
-        @-webkit-keyframes scroll {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(-260px * 5)); transform: translateX(calc(-260px * 5))}
-        }
-
-        @keyframes scroll {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(-260px * 5)); transform: translateX(calc(-260px * 5))}
-        }
-
-        @-webkit-keyframes scroll2 {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(260px * 5)); transform: translateX(calc(260px * 5))}
-        }
-
-        @keyframes scroll2 {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(260px * 5)); transform: translateX(calc(260px * 5))}
-        }
-
-        .slider
-        {
-          position: relative;
-          width: 100%;
-
-          .slide-track
-          {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            width: -webkit-calc(260px * 9);
-            width: calc(260px * 9);
-
-            .slide
-            {
-              @include df(column,center,center);
-              width: 260px;
-              padding: 0 10px;
-
-              .partner
-              {
-                width: 240px;
-                min-width: 240px;
-                padding: 15px 10px;
-                margin-bottom: 20px;
-                min-height: 100px;
-                -webkit-border-radius: 10px;
-                border-radius: 10px;
-
-                &:nth-child(1)
-                {
-                  margin-right: -20px;
-                }
-
-                &:nth-child(2)
-                {
-                  margin-left: -20px;
-                  margin-bottom: 0;
-                }
-
-                .icon
-                {
-                  width: 50px;
-                  min-width: 50px;
-                  margin-right: 10px;
-                }
-
-                .desc
-                {
-                  p
-                  {
-                    font-size: 18px;
-                    line-height: 20px;
-                  }
-
-                  span
-                  {
-                    font-size: 14px;
-                    line-height: 18px;
-                  }
-                }
-              }
-            }
-          }
-
-          .slide-track2
-          {
-            margin-left: -webkit-calc(-260px * 5);
-            margin-left: calc(-260px * 5);
-          }
-        }
-
-        .they_trust_us_slider
-        {
-          .slide
-          {
-            .partner
-            {
-              width: 240px;
-              min-width: 240px;
-              padding: 15px 10px;
-              margin-bottom: 20px;
-              min-height: 100px;
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 18px;
-                  line-height: 20px;
-                }
-
-                span
-                {
-                  font-size: 14px;
-                  line-height: 18px;
-                }
-              }
-            }
-          }
-        }
-
-        .they_trust_us_slider2
-        {
-          .slide
-          {
-            .partner
-            {
-              margin-left: -100px;
-              -webkit-box-pack: end;
-              -webkit-justify-content: flex-end;
-              -ms-flex-pack: end;
-              justify-content: flex-end;
-            }
-          }
-        }
-      }
-    }
-
-    .benefits
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            li
-            {
-              -webkit-border-radius: 43px;
-              border-radius: 43px;
-              padding: 30px 15px;
-              margin: 15px 1%;
-              width: 48%;
-              @include df(column,center,center);
-
-              .h5
-              {
-                font-size: 26px;
-                line-height: 30px;
-              }
-
-              p
-              {
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .convenient_application
-    {
-      .mw
-      {
-        padding: 50px 2vh;
-
-        .cont
-        {
-          margin-top: 0;
-
-          .line
-          {
-            -webkit-border-radius: 30px;
-            border-radius: 30px;
-            @include df(column,center,center);
-            height: auto;
-            padding: 0 20px;
-            margin-bottom: 30px;
-
-            &:last-child
-            {
-              margin-bottom: 0;
-            }
-
-            .l_side
-            {
-              padding: 30px 0;
-              width: 100%;
-              -webkit-box-ordinal-group: 0;
-              -webkit-order: -1;
-              -ms-flex-order: -1;
-              order: -1;
-
-              .h4
-              {
-                font-size: 24px;
-                line-height: 30px;
-                padding-bottom: 15px;
-              }
-
-              p
-              {
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-
-            .r_side
-            {
-              width: 100%;
-
-              .img
-              {
-                max-width: 240px;
-                margin: 0 auto;
-              }
-            }
-          }
-
-          .line2
-          {
-            .l_side
-            {
-              text-align: right;
-              width: 100%;
-            }
-
-            .r_side
-            {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
-    .contacts
-    {
-      margin-top: 0;
-
-      .mw
-      {
-        padding: 30px 2vh;
-
-        .cont
-        {
-          @include df(column,center,center);
-
-          .left_side
-          {
-            width: 100%;
-
-            .logo
-            {
-              width: 100%;
-              max-width: 200px;
-              padding-bottom: 20px;
-              margin: 0 auto;
-            }
-
-            p
-            {
-              font-size: 18px;
-              line-height: 22px;
-              text-align: center;
-            }
-
-            .banks
-            {
-              padding-top: 20px;
-              margin: 0 auto;
-              max-width: 200px;
-            }
-          }
-
-          .right_side
-          {
-            width: 100%;
-
-            .line
-            {
-              .l_side
-              {
-                p
-                {
-                  font-size: 14px;
-                  line-height: 20px;
-                  padding-bottom: 10px;
-                }
-              }
-
-              .r_side
-              {
-                a
-                {
-                  font-size: 14px;
-                  line-height: 20px;
-                  margin-bottom: 10px;
-                }
-              }
-            }
-
-            span
-            {
-              font-size: 14px;
-              line-height: 20px;
-              margin-top: 20px;
-            }
-          }
-        }
-      }
-    }
-
-    .footer
-    {
-      margin-top: 20px;
-
-      .mw
-      {
-        padding: 20px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            @include df(row,center,center);
-            -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-
-            li
-            {
-              @include df(row,center,center);
-              margin: 10px;
-
-              .icon
-              {
-                width: 30px;
-                min-width: 30px;
-                margin-right: 10px;
-              }
-
-              a
-              {
-                font-size: 18px;
-                line-height: 24px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .copyright
-    {
-      padding: 20px 2vh;
-
-      p
-      {
-        font-size: 14px;
-      }
-    }
-  }
 }
 
-
-@media (min-width: 768px) and (max-width: 991px)
-{
-  .page
-  {
-    .header
-    {
-      .mw
-      {
-        padding: 40px 2vh;
-
-        .logo
-        {
-          max-width: 350px;
-        }
-      }
-    }
-
-    .main
-    {
-      .mw
-      {
-        padding: 70px 2vh;
-
-        .cont
-        {
-          .left_side
-          {
-            .h1
-            {
-              font-size: 45px;
-              line-height: 60px;
-              letter-spacing: 0.1px;
-            }
-
-            .h2
-            {
-              font-size: 24px;
-              line-height: 30px;
-              padding-top: 20px;
-            }
-
-            .btn_b
-            {
-              margin-top: 30px;
-            }
-          }
-
-          .right_side
-          {
-            .m_tab
-            {
-              width: 90%;
-              max-width: 400px;
-              padding: 15px 20px;
-              margin-bottom: 30px;
-
-              &:nth-child(2)
-              {
-                margin-right: 50px;
-              }
-
-              &:last-child
-              {
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 18px;
-                  line-height: 24px;
+@media (min-width: 768px) and (max-width: 991px) {
+    .page {
+        .header {
+            .mw {
+                padding: 40px 2vh;
+                .logo {
+                    max-width: 350px;
                 }
-
-                span
-                {
-                  font-size: 16px;
+            }
+        }
+        .main {
+            .mw {
+                padding: 70px 2vh;
+                .cont {
+                    .left_side {
+                        .h1 {
+                            font-size: 40px;
+                            line-height: 60px;
+                            letter-spacing: 0.1px;
+                        }
+                        .h2 {
+                            font-size: 22px;
+                            line-height: 30px;
+                            padding-top: 20px;
+                        }
+                        .btn_b {
+                            margin-top: 30px;
+                        }
+                    }
+                    .right_side {
+                        .m_tab {
+                            width: 90%;
+                            max-width: 400px;
+                            padding: 15px 20px;
+                            margin-bottom: 30px;
+                            &:nth-child(2) {
+                                margin-right: 50px;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            .icon {
+                                width: 50px;
+                                min-width: 50px;
+                                margin-right: 10px;
+                            }
+                            .desc {
+                                p {
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                }
+                                span {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
                 }
-              }
-            }
-          }
-        }
-      }
-
-      .bg_line
-      {
-        margin-top: 0;
-      }
-    }
-
-    .get_your_first_donate
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          ul
-          {
-
-            li
-            {
-              margin: 15px 20px;
-
-              .num
-              {
-                width: 80px;
-                height: 80px;
-
-                &:after
-                {
-                  width: 140px;
-                  right: -150px;
+                .arrow_down {
+                    padding-top: 120px;
                 }
-
-                span
-                {
-                  font-size: 40px;
+            }
+            .bg_line {
+                margin-top: 0;
+            }
+        }
+        .get_your_first_donate {
+            .mw {
+                padding: 60px 2vh;
+                .cont {
+                    ul {
+                        li {
+                            margin: 15px 20px;
+                            .num {
+                                width: 80px;
+                                height: 80px;
+                                &:after {
+                                    width: 140px;
+                                    right: -150px;
+                                }
+                                span {
+                                    font-size: 40px;
+                                }
+                            }
+                            p {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
                 }
-              }
-
-              p
-              {
-                font-size: 20px;
-                line-height: 24px;
-              }
             }
-          }
         }
-      }
-    }
-
-    .connect_community
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          padding: 40px 20px;
-          -webkit-border-radius: 30px;
-          border-radius: 30px;
-          max-width: 800px;
-          margin: 0 auto;
-
-          .h4
-          {
-            font-size: 24px;
-            line-height: 30px;
-            max-width: 400px;
-          }
-
-          .btn_b
-          {
-            margin-left: 20px;
-            max-width: 240px;
-
-            .btn_m
-            {
-              padding: 20px 10px;
-            }
-          }
-        }
-      }
-    }
-
-    .m_title
-    {
-      padding-bottom: 30px;
-
-      .h3
-      {
-        font-size: 35px;
-        line-height: 40px;
-      }
-    }
-
-    .they_trust_us
-    {
-      padding: 60px 0;
-
-      .cont
-      {
-        $animationSpeed: 30s;
-
-        @-webkit-keyframes scroll {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(-300px * 5)); transform: translateX(calc(-300px * 5))}
-        }
-
-        @keyframes scroll {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(-300px * 5)); transform: translateX(calc(-300px * 5))}
-        }
-
-        @-webkit-keyframes scroll2 {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(300px * 5)); transform: translateX(calc(300px * 5))}
-        }
-
-        @keyframes scroll2 {
-          0% { -webkit-transform: translateX(0); transform: translateX(0); }
-          100% { -webkit-transform: translateX(-webkit-calc(300px * 5)); transform: translateX(calc(300px * 5))}
-        }
-
-        .slider
-        {
-          position: relative;
-          width: 100%;
-
-          .slide-track
-          {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            width: -webkit-calc(300px * 9);
-            width: calc(300px * 9);
-
-            .slide
-            {
-              @include df(column,center,center);
-              width: 300px;
-              padding: 0 30px;
-
-              .partner
-              {
-                width: 240px;
-                min-width: 240px;
-                padding: 15px 10px;
-                margin-bottom: 20px;
-                min-height: 100px;
-                -webkit-border-radius: 10px;
-                border-radius: 10px;
-
-                &:nth-child(1)
-                {
-                  margin-right: -20px;
+        .connect_community {
+            .mw {
+                padding: 60px 2vh;
+                .cont {
+                    padding: 40px 20px;
+                    -webkit-border-radius: 30px;
+                    border-radius: 30px;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    .h4 {
+                        font-size: 24px;
+                        line-height: 30px;
+                        max-width: 400px;
+                    }
+                    .btn_b {
+                        margin-left: 20px;
+                        max-width: 240px;
+                        .btn_m {
+                            padding: 20px 10px;
+                        }
+                    }
                 }
-
-                &:nth-child(2)
-                {
-                  margin-left: -20px;
-                  margin-bottom: 0;
-                }
-
-                .icon
-                {
-                  width: 50px;
-                  min-width: 50px;
-                  margin-right: 10px;
-                }
-
-                .desc
-                {
-                  p
-                  {
-                    font-size: 18px;
-                    line-height: 20px;
-                  }
-
-                  span
-                  {
-                    font-size: 14px;
-                    line-height: 18px;
-                  }
-                }
-              }
             }
-          }
-
-          .slide-track2
-          {
-            margin-left: -webkit-calc(-300px * 5);
-            margin-left: calc(-300px * 5);
-          }
         }
-
-        .they_trust_us_slider
-        {
-          .slide
-          {
-            .partner
-            {
-              width: 240px;
-              min-width: 240px;
-              padding: 15px 10px;
-              margin-bottom: 20px;
-              min-height: 100px;
-
-              &:nth-child(1)
-              {
-                margin-right: -20px;
-              }
-
-              &:nth-child(2)
-              {
-                margin-left: -20px;
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 18px;
-                  line-height: 20px;
-                }
-
-                span
-                {
-                  font-size: 14px;
-                  line-height: 18px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .benefits
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            li
-            {
-              -webkit-border-radius: 43px;
-              border-radius: 43px;
-              padding: 30px 15px;
-              margin: 15px 1%;
-              width: 48%;
-              @include df(column,center,center);
-
-              .h5
-              {
-                font-size: 26px;
-                line-height: 30px;
-              }
-
-              p
-              {
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .convenient_application
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          .line
-          {
-            -webkit-border-radius: 30px;
-            border-radius: 30px;
-            padding: 0 40px;
-            margin-bottom: 100px;
-            height: 200px;
-
-            &:last-child
-            {
-              margin-bottom: 0;
-            }
-
-            .l_side
-            {
-              padding: 20px 0;
-
-              .h4
-              {
-                font-size: 24px;
-                line-height: 30px;
-                padding-bottom: 15px;
-              }
-
-              p
-              {
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .contacts
-    {
-      margin-top: 0;
-
-      .mw
-      {
-        padding: 40px 2vh;
-
-        .cont
-        {
-          .left_side
-          {
-            .logo
-            {
-              width: 100%;
-              max-width: 200px;
-              padding-bottom: 20px;
-            }
-
-            p
-            {
-              font-size: 18px;
-              line-height: 22px;
-            }
-
-            .banks
-            {
-              padding-top: 20px;
-              max-width: 200px;
-            }
-          }
-
-          .right_side
-          {
-            .line
-            {
-              .l_side
-              {
-                p
-                {
-                  font-size: 14px;
-                  line-height: 20px;
-                  padding-bottom: 10px;
-                }
-              }
-
-              .r_side
-              {
-                a
-                {
-                  font-size: 14px;
-                  line-height: 20px;
-                  margin-bottom: 10px;
-                }
-              }
-            }
-
-            span
-            {
-              font-size: 14px;
-              line-height: 20px;
-              margin-top: 20px;
-            }
-          }
-        }
-      }
-    }
-
-    .footer
-    {
-      margin-top: 20px;
-
-      .mw
-      {
-        padding: 30px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            li
-            {
-              @include df(row,center,center);
-
-              .icon
-              {
-                width: 30px;
-                min-width: 30px;
-                margin-right: 10px;
-              }
-
-              a
-              {
-                font-size: 18px;
-                line-height: 24px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .copyright
-    {
-      padding: 20px 2vh;
-
-      p
-      {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-
-@media (min-width: 991px) and (max-width: 1300px)
-{
-  .page
-  {
-    .header
-    {
-      .mw
-      {
-        padding: 40px 2vh;
-
-        .logo
-        {
-          max-width: 350px;
-        }
-      }
-    }
-
-    .main
-    {
-      .mw
-      {
-        padding: 70px 2vh;
-
-        .cont
-        {
-          .left_side
-          {
-            .h1
-            {
-              font-size: 50px;
-              line-height: 60px;
-              letter-spacing: 0.1px;
-            }
-
-            .h2
-            {
-              font-size: 24px;
-              line-height: 30px;
-              padding-top: 30px;
-            }
-
-            .btn_b
-            {
-              margin-top: 40px;
-            }
-          }
-
-          .right_side
-          {
-            .m_tab
-            {
-              width: 90%;
-              max-width: 400px;
-              padding: 15px 20px;
-              margin-bottom: 50px;
-
-              &:nth-child(2)
-              {
-                margin-right: 50px;
-              }
-
-              &:last-child
-              {
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 60px;
-                min-width: 60px;
-                margin-right: 15px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 20px;
-                  line-height: 24px;
-                }
-
-                span
-                {
-                  font-size: 18px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .get_your_first_donate
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          ul
-          {
-
-            li
-            {
-              margin: 15px 40px;
-
-              .num
-              {
-                width: 100px;
-                height: 100px;
-
-                &:after
-                {
-                  width: 160px;
-                  right: -170px;
-                }
-
-                span
-                {
-                  font-size: 50px;
-                }
-              }
-
-              p
-              {
-                font-size: 22px;
-                line-height: 26px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .connect_community
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          padding: 70px 40px;
-          -webkit-border-radius: 30px;
-          border-radius: 30px;
-          max-width: 900px;
-          margin: 0 auto;
-
-          .h4
-          {
-            font-size: 26px;
-            line-height: 30px;
-          }
-
-          .btn_b
-          {
-            margin-left: 50px;
-
-            .btn_m
-            {
-              padding: 20px 10px;
-            }
-          }
-        }
-      }
-    }
-
-    .m_title
-    {
-      padding-bottom: 40px;
-
-      .h3
-      {
-        font-size: 40px;
-        line-height: 45px;
-      }
-    }
-
-    .they_trust_us
-    {
-      padding: 60px 0;
-
-      .cont
-      {
-        .they_trust_us_slider
-        {
-          .slide
-          {
-            .partner
-            {
-              width: 300px;
-              min-width: 300px;
-              padding: 15px 25px;
-              margin-bottom: 20px;
-              min-height: 100px;
-
-              &:nth-child(1)
-              {
-                margin-right: -20px;
-              }
-
-              &:nth-child(2)
-              {
-                margin-left: -20px;
-                margin-bottom: 0;
-              }
-
-              .icon
-              {
-                width: 50px;
-                min-width: 50px;
-                margin-right: 10px;
-              }
-
-              .desc
-              {
-                p
-                {
-                  font-size: 20px;
-                  line-height: 24px;
-                }
-
-                span
-                {
-                  font-size: 16px;
-                  line-height: 18px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .benefits
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            li
-            {
-              -webkit-border-radius: 43px;
-              border-radius: 43px;
-              padding: 30px 15px;
-              max-width: 400px;
-              margin: 15px;
-              @include df(column,center,center);
-
-              .h5
-              {
+        .m_title {
+            padding-bottom: 30px;
+            .h3 {
                 font-size: 30px;
                 line-height: 40px;
-              }
-
-              p
-              {
-                font-size: 20px;
-                line-height: 24px;
-              }
             }
-          }
         }
-      }
-    }
-
-    .convenient_application
-    {
-      .mw
-      {
-        padding: 60px 2vh;
-
-        .cont
-        {
-          .line
-          {
-            -webkit-border-radius: 30px;
-            border-radius: 30px;
-            padding: 0 60px;
-            height: 260px;
-
-            .l_side
-            {
-              padding: 20px 0;
-
-              .h4
-              {
-                font-size: 30px;
-                line-height: 40px;
-                padding-bottom: 20px;
-              }
-
-              p
-              {
-                font-size: 22px;
-                line-height: 26px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .contacts
-    {
-      margin-top: 40px;
-
-      .mw
-      {
-        padding: 40px 2vh;
-
-        .cont
-        {
-          .left_side
-          {
-            .logo
-            {
-              width: 100%;
-              padding-bottom: 30px;
-            }
-
-            p
-            {
-              font-size: 18px;
-              line-height: 22px;
-            }
-
-            .banks
-            {
-              padding-top: 30px;
-            }
-          }
-
-          .right_side
-          {
-            .line
-            {
-              .l_side
-              {
-                p
-                {
-                  font-size: 16px;
-                  line-height: 20px;
-                  padding-bottom: 15px;
+        .they_trust_us {
+            padding: 60px 0;
+            .cont {
+                $animationSpeed: 30s;
+                @-webkit-keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(-300px * 5));
+                        transform: translateX(calc(-300px * 5))
+                    }
                 }
-              }
-
-              .r_side
-              {
-                a
-                {
-                  font-size: 16px;
-                  line-height: 20px;
-                  margin-bottom: 15px;
+                @keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(-300px * 5));
+                        transform: translateX(calc(-300px * 5))
+                    }
                 }
-              }
+                @-webkit-keyframes scroll2 {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(300px * 5));
+                        transform: translateX(calc(300px * 5))
+                    }
+                }
+                @keyframes scroll2 {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-webkit-calc(300px * 5));
+                        transform: translateX(calc(300px * 5))
+                    }
+                }
+                .slider {
+                    position: relative;
+                    width: 100%;
+                    .slide-track {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: -webkit-calc(300px * 9);
+                        width: calc(300px * 9);
+                        .slide {
+                            @include df(column, center, center);
+                            width: 300px;
+                            padding: 0 30px;
+                            .partner {
+                                width: 240px;
+                                min-width: 240px;
+                                padding: 15px 10px;
+                                margin-bottom: 20px;
+                                min-height: 100px;
+                                -webkit-border-radius: 10px;
+                                border-radius: 10px;
+                                &:nth-child(1) {
+                                    margin-right: -20px;
+                                }
+                                &:nth-child(2) {
+                                    margin-left: -20px;
+                                    margin-bottom: 0;
+                                }
+                                .icon {
+                                    width: 50px;
+                                    min-width: 50px;
+                                    margin-right: 10px;
+                                }
+                                .desc {
+                                    p {
+                                        font-size: 18px;
+                                        line-height: 20px;
+                                    }
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slide-track2 {
+                        margin-left: -webkit-calc(-300px * 5);
+                        margin-left: calc(-300px * 5);
+                    }
+                }
+                .they_trust_us_slider {
+                    .slide {
+                        .partner {
+                            width: 240px;
+                            min-width: 240px;
+                            padding: 15px 10px;
+                            margin-bottom: 20px;
+                            min-height: 100px;
+                            &:nth-child(1) {
+                                margin-right: -20px;
+                            }
+                            &:nth-child(2) {
+                                margin-left: -20px;
+                                margin-bottom: 0;
+                            }
+                            .icon {
+                                width: 50px;
+                                min-width: 50px;
+                                margin-right: 10px;
+                            }
+                            .desc {
+                                p {
+                                    font-size: 18px;
+                                    line-height: 20px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-
-            span
-            {
-              font-size: 16px;
-              line-height: 20px;
-              margin-top: 20px;
-            }
-          }
         }
-      }
-    }
-
-    .footer
-    {
-      margin-top: 20px;
-
-      .mw
-      {
-        padding: 30px 2vh;
-
-        .cont
-        {
-          ul
-          {
-            li
-            {
-              @include df(row,center,center);
-
-              .icon
-              {
-                width: 30px;
-                min-width: 30px;
-                margin-right: 20px;
-              }
-
-              a
-              {
-                font-size: 20px;
-                line-height: 24px;
-              }
+        .benefits {
+            .mw {
+                padding: 60px 2vh;
+                .cont {
+                    ul {
+                        li {
+                            padding: 30px 20px;
+                            margin: 15px 3%;
+                            width: 42%;
+                            .h5 {
+                                font-size: 26px;
+                                line-height: 30px;
+                            }
+                            p {
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+        .convenient_application {
+            .mw {
+                padding: 60px 2vh;
+                .cont {
+                    .line {
+                        -webkit-border-radius: 30px;
+                        border-radius: 30px;
+                        padding: 0 40px;
+                        margin-bottom: 50px;
+                        height: 180px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .l_side {
+                            padding: 20px 0;
+                            .h4 {
+                                font-size: 22px;
+                                line-height: 26px;
+                                padding-bottom: 15px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contacts {
+            margin-top: 0;
+            .mw {
+                padding: 40px 2vh;
+                .cont {
+                    .left_side {
+                        .logo {
+                            width: 100%;
+                            max-width: 200px;
+                            padding-bottom: 20px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                        .banks {
+                            padding-top: 20px;
+                            max-width: 200px;
+                        }
+                    }
+                    .right_side {
+                        .line {
+                            .l_side {
+                                p {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                            .r_side {
+                                a {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            .mw {
+                .cont {
+                    ul {
+                        li {
+                            margin: 0 50px;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
+}
+
+@media (min-width: 991px) and (max-width: 1300px) {
+    .page {
+        .main {
+            .mw {
+                padding: 70px 2vh;
+                .arrow_down {
+                    padding-top: 120px;
+                }
+            }
+        }
+        .footer {
+            .mw {
+                .cont {
+                    ul {
+                        li {
+                            margin: 0 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -41,42 +41,29 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-        * {
-            font-family: 'Open Sans', sans-serif!important;
+        .page .convenient_application .mw .cont .line .l_side p,
+        .page .benefits .mw .cont ul li p {
+            font-size: 14px!important;
         }
         
-        .mw {
-            max-width: 1300px!important;
+        .page .contacts .mw .cont .right_side .line .l_side {
+            width: 55%!important;
         }
         
-        .page {
-            zoom: 80%;
+        .page .they_trust_us .cont .slider .slide-track {
+            -webkit-animation: scroll10 25s linear infinite;
+            animation: scroll10 25s linear infinite!important;
         }
         
-        .m_tab {
-            transform: translate3d(0, 0, 0);
-        }
-
-        .slider > .slide-track > .slide > .partner > .icon > img {
-            border-radius: 100%;
-        }
-        
-        .h1,
-        .h3,
-        .h4,
-        .h5,
-        .h3 {
-            font-weight: 700!important;
-        }
-        
-        .page .main .mw .cont .left_side .h2 {
-            font-size: 21px!important;
-        }
-        
-        .scrollup {
-            box-shadow: none!important;
-            -webkit-box-shadow: none!important;
+        @keyframes scroll10 {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(-webkit-calc(-370px * 4));
+                transform: translateX(calc(-370px * 4));
+            }
         }
     </style>
 </head>
@@ -153,6 +140,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="arrow_down">
+                    <img src="images/arrow_down.svg" alt="arrow_down">
                 </div>
             </div>
 
@@ -361,7 +352,7 @@
                             </div>
                         </div>
 
-<!--                        ПОВТОР ПЕРВОГО ПАБЛИК-->
+                        <!--                        ПОВТОР ПЕРВОГО ПАБЛИК-->
                         <div class="slide">
                             <div class="partner">
                                 <div class="icon">
@@ -382,365 +373,365 @@
                     </div>
                 </div>
 
-<!--                <div class="slider">-->
-<!--                    <div class="slide-track slide-track2">-->
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t1.svg" alt="Trust 1">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Донаты-->
-<!--                                    </p>-->
-
-<!--                                    <span>128 331 участник</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t2.svg" alt="Trust 2">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Тинькофф3-->
-<!--                                    </p>-->
-
-<!--                                    <span>573 213 участника</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t3.svg" alt="Trust 3">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Багосы-->
-<!--                                    </p>-->
-
-<!--                                    <span>501 987 участников</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t4.svg" alt="Trust 4">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Журнал «Код»-->
-<!--                                    </p>-->
-
-<!--                                    <span>107 944 участника</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t3.svg" alt="Trust 3">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Багосы-->
-<!--                                    </p>-->
-
-<!--                                    <span>501 987 участников</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t1.svg" alt="Trust 1">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Донаты-->
-<!--                                    </p>-->
-
-<!--                                    <span>128 331 участник</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t2.svg" alt="Trust 2">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Тинькофф-->
-<!--                                    </p>-->
-
-<!--                                    <span>573 213 участника</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t3.svg" alt="Trust 3">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Багосы-->
-<!--                                    </p>-->
-
-<!--                                    <span>501 987 участников</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="slide">-->
-<!--                            <div class="partner">-->
-<!--                                <div class="icon">-->
-<!--                                    <img src="images/t4.svg" alt="Trust 4">-->
-<!--                                </div>-->
-
-<!--                                <div class="desc">-->
-<!--                                    <p>-->
-<!--                                        Журнал «Код»-->
-<!--                                    </p>-->
-
-<!--                                    <span>107 944 участника</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="they_trust_us_slider they_trust_us_slider1 owl-carousel">-->
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t1.svg" alt="Trust 1">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Донаты-->
-<!--                                </p>-->
-
-<!--                                <span>128 331 участник</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t2.svg" alt="Trust 2">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Тинькофф-->
-<!--                                </p>-->
-
-<!--                                <span>573 213 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t3.svg" alt="Trust 3">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Багосы-->
-<!--                                </p>-->
-
-<!--                                <span>501 987 участников</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t4.svg" alt="Trust 4">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Журнал «Код»-->
-<!--                                </p>-->
-
-<!--                                <span>107 944 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t3.svg" alt="Trust 3">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Багосы-->
-<!--                                </p>-->
-
-<!--                                <span>501 987 участников</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t1.svg" alt="Trust 1">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Донаты-->
-<!--                                </p>-->
-
-<!--                                <span>128 331 участник</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t2.svg" alt="Trust 2">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Тинькофф-->
-<!--                                </p>-->
-
-<!--                                <span>573 213 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t3.svg" alt="Trust 3">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Багосы-->
-<!--                                </p>-->
-
-<!--                                <span>501 987 участников</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t4.svg" alt="Trust 4">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Журнал «Код»-->
-<!--                                </p>-->
-
-<!--                                <span>107 944 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="they_trust_us_slider they_trust_us_slider2 owl-carousel">-->
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t4.svg" alt="Trust 4">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Журнал «Код»-->
-<!--                                </p>-->
-
-<!--                                <span>107 944 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t5.svg" alt="Trust 5">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Угадай Мелодию-->
-<!--                                </p>-->
-
-<!--                                <span>65 972 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t6.svg" alt="Trust 6">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Донаты-->
-<!--                                </p>-->
-
-<!--                                <span>128 331 участник</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="slide">-->
-<!--                        <div class="partner">-->
-<!--                            <div class="icon">-->
-<!--                                <img src="images/t2.svg" alt="Trust 2">-->
-<!--                            </div>-->
-
-<!--                            <div class="desc">-->
-<!--                                <p>-->
-<!--                                    Тинькофф-->
-<!--                                </p>-->
-
-<!--                                <span>573 213 участника</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="slider">-->
+                <!--                    <div class="slide-track slide-track2">-->
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t1.svg" alt="Trust 1">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Донаты-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>128 331 участник</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t2.svg" alt="Trust 2">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Тинькофф3-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>573 213 участника</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t3.svg" alt="Trust 3">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Багосы-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>501 987 участников</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t4.svg" alt="Trust 4">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Журнал «Код»-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>107 944 участника</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t3.svg" alt="Trust 3">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Багосы-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>501 987 участников</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t1.svg" alt="Trust 1">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Донаты-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>128 331 участник</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t2.svg" alt="Trust 2">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Тинькофф-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>573 213 участника</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t3.svg" alt="Trust 3">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Багосы-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>501 987 участников</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="slide">-->
+                <!--                            <div class="partner">-->
+                <!--                                <div class="icon">-->
+                <!--                                    <img src="images/t4.svg" alt="Trust 4">-->
+                <!--                                </div>-->
+
+                <!--                                <div class="desc">-->
+                <!--                                    <p>-->
+                <!--                                        Журнал «Код»-->
+                <!--                                    </p>-->
+
+                <!--                                    <span>107 944 участника</span>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <!--                <div class="they_trust_us_slider they_trust_us_slider1 owl-carousel">-->
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t1.svg" alt="Trust 1">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Донаты-->
+                <!--                                </p>-->
+
+                <!--                                <span>128 331 участник</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t2.svg" alt="Trust 2">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Тинькофф-->
+                <!--                                </p>-->
+
+                <!--                                <span>573 213 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t3.svg" alt="Trust 3">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Багосы-->
+                <!--                                </p>-->
+
+                <!--                                <span>501 987 участников</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t4.svg" alt="Trust 4">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Журнал «Код»-->
+                <!--                                </p>-->
+
+                <!--                                <span>107 944 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t3.svg" alt="Trust 3">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Багосы-->
+                <!--                                </p>-->
+
+                <!--                                <span>501 987 участников</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t1.svg" alt="Trust 1">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Донаты-->
+                <!--                                </p>-->
+
+                <!--                                <span>128 331 участник</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t2.svg" alt="Trust 2">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Тинькофф-->
+                <!--                                </p>-->
+
+                <!--                                <span>573 213 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t3.svg" alt="Trust 3">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Багосы-->
+                <!--                                </p>-->
+
+                <!--                                <span>501 987 участников</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t4.svg" alt="Trust 4">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Журнал «Код»-->
+                <!--                                </p>-->
+
+                <!--                                <span>107 944 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <!--                <div class="they_trust_us_slider they_trust_us_slider2 owl-carousel">-->
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t4.svg" alt="Trust 4">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Журнал «Код»-->
+                <!--                                </p>-->
+
+                <!--                                <span>107 944 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t5.svg" alt="Trust 5">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Угадай Мелодию-->
+                <!--                                </p>-->
+
+                <!--                                <span>65 972 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t6.svg" alt="Trust 6">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Донаты-->
+                <!--                                </p>-->
+
+                <!--                                <span>128 331 участник</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
+                <!--                    <div class="slide">-->
+                <!--                        <div class="partner">-->
+                <!--                            <div class="icon">-->
+                <!--                                <img src="images/t2.svg" alt="Trust 2">-->
+                <!--                            </div>-->
+
+                <!--                            <div class="desc">-->
+                <!--                                <p>-->
+                <!--                                    Тинькофф-->
+                <!--                                </p>-->
+
+                <!--                                <span>573 213 участника</span>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
         </section>
 
@@ -779,7 +770,7 @@
             <div class="mw">
                 <div class="cont">
                     <h4 class="h4">
-                        Начни собирать донаты прямо сейчас
+                        Начни собирать донаты<br>прямо сейчас
                     </h4>
 
                     <div class="btn_b">
@@ -860,7 +851,7 @@
             </div>
         </section>
 
-        <section class="get_your_first_donate">
+        <section class="get_your_first_donate get_your_first_donate2">
             <div class="mw">
                 <div class="m_title">
                     <h3 class="h3">
@@ -1024,7 +1015,7 @@
 
     <script src="dist/TweenMax.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
     <script>
         const anchors = document.querySelectorAll('a[href*="#"]')
 

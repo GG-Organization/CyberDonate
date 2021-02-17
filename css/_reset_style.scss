@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 *
 {
@@ -9,7 +9,7 @@
   text-decoration: none;
   list-style: none;
   outline: none;
-  font-family: 'Ubuntu', sans-serif !important;
+  font-family: 'Open Sans', sans-serif!important;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,hr
@@ -81,6 +81,22 @@ $max_width: 1104px;
   max-width: $max_width;
   margin: 0 auto;
   position: relative;
+}
+
+.m_tab {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slider > .slide-track > .slide > .partner > .icon > img {
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+
+.scrollup {
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
 }
 
 
