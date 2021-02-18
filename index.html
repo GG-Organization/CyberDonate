@@ -42,6 +42,16 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <style>
+        html,
+        body {
+            max-width: 100vw;
+        }
+        
+        .page {
+            width: 100vw!important;
+            overflow-x: hidden!important;
+        }
+        
         .page .convenient_application .mw .cont .line .l_side p,
         .page .benefits .mw .cont ul li p {
             font-size: 14px!important;
@@ -1040,31 +1050,35 @@
 
     <script src="js/main.min.js"></script>
     <script>
-        // $("body").on('click', '[href*="#"]', function(e) {
-        //     var fixed_offset = 100;
-        //     $('html,body').stop().animate({
-        //         scrollTop: $(this.hash).offset().top - fixed_offset
-        //     }, 1000);
-        //     e.preventDefault();
-        // });
-
-        $(document).ready(function() {
-            $("#menu").on("click", "a", function(event) {
-                //отменяем стандартную обработку нажатия по ссылке
-                event.preventDefault();
-
-                //забираем идентификатор бока с атрибута href
-                var id = $(this).attr('href'),
-
-                    //узнаем высоту от начала страницы до блока на который ссылается якорь
-                    top = $(id).offset().top;
-
-                //анимируем переход на расстояние - top за 1500 мс
-                $('body,html').animate({
-                    scrollTop: top
-                }, 1500);
-            });
+        $("body").on('click', '[href*="#"]', function(e) {
+            var fixed_offset = 100;
+            $('html,body').stop().animate({
+                scrollTop: $(this.hash).offset().top - fixed_offset
+            }, 1000);
+            e.preventDefault();
         });
+
+        $("html, body").animate({
+            scrollTop: scrollingDistance
+        }, 800);
+
+        // $(document).ready(function() {
+        //     $("#menu").on("click", "a", function(event) {
+        //         //отменяем стандартную обработку нажатия по ссылке
+        //         event.preventDefault();
+
+        //         //забираем идентификатор бока с атрибута href
+        //         var id = $(this).attr('href'),
+
+        //             //узнаем высоту от начала страницы до блока на который ссылается якорь
+        //             top = $(id).offset().top;
+
+        //         //анимируем переход на расстояние - top за 1500 мс
+        //         $('body,html').animate({
+        //             scrollTop: top
+        //         }, 1500);
+        //     });
+        // });
     </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
