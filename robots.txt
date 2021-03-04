@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /images/
+Disallow: /js/
+Disallow: /css/
+User-agent: Googlebot
+Allow: /
+User-agent: Yandex
+Allow: /images/
+Disallow: /js/
+Disallow: /css/
+Host: xn--80abjdnlzhqy3h.xn--p1ai
